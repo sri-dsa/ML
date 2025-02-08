@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Srivathsan Karthikeyan's Artificial Intelligence Projects Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+		<!-- Include the particles.js library -->
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="particles-js"></div>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": { 
+                "value": 300,  // Reduce number for better performance
+                "density": { "enable": true, "value_area": 800 } 
+            },
+            "color": { "value": "#ffe100" },
+            "shape": {
+                "type": "circle",
+                "stroke": { "width": 2, "color": "#000000" },
+                "polygon": { "nb_sides": 5 }
+            },
+            "opacity": {
+                "value": 0.8,
+                "random": true,
+                "anim": { "enable": true, "speed": 1, "opacity_min": 0.3, "sync": false }
+            },
+            "size": {
+                "value": 5,
+                "random": true,
+                "anim": { "enable": true, "speed": 5, "size_min": 0.1, "sync": false }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ff0000",
+                "opacity": 0.6,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 3,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": { 
+                    "enable": true, 
+                    "mode": "bubble"  // More visible effect
+                },
+                "onclick": { 
+                    "enable": true, 
+                    "mode": "push"  // Click to add particles
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 250,
+                    "line_linked": { "opacity": 1 }
+                },
+                "bubble": {
+                    "distance": 200,
+                    "size": 10,
+                    "duration": 2,
+                    "opacity": 1,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 150,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+
+
+		
+		
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Artificial Intelligence Projects Portfolio<br /></h1>
+						<h2>Author : Srivathsan Karthikeyan<br /></h2>
+						<h2>Includes Machine Learning, Deep Learning, Computer Vision, NLP<br /></h2>
+							<p align="center">
+								<a href="#nav" class = "scrolly">
+									<img src="https://img.shields.io/badge/Python Libraries Used : -FFD43B?style=flat-square&logo=python&logoColor=blue&labelColor=grey" height="30" 
+									style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								</a>							
+								<!-- TensorFlow -->
+								<a href="#nav" class = "scrolly">
+									<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" height="30" 
+									style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								</a>
+							
+								<!-- Keras -->
+								<a href="#nav" class = "scrolly">
+									<img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=keras&logoColor=white" height="30" 
+									style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								</a>
+							
+								<!-- OpenCV -->
+								<a href="#nav" class = "scrolly">
+									<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white&labelColor=grey" height="30" 
+									style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								</a>
+							
+								<!-- NLTK -->
+								<a href="#nav" class = "scrolly">
+									<img src="https://img.shields.io/badge/NLTK-%234A90E2.svg?style=for-the-badge&logo=python&logoColor=white" height="30" 
+									style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								</a>
+							
+								<!-- PyTorch -->
+								<a href="#nav" class = "scrolly">
+									<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white&labelColor=grey" height="30" 
+									style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								</a>
+				 <ul class="actions">
+					<li>
+						<a href="#nav" class="button icon solid solo fa-arrow-down scrolly"
+						   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+						   onmouseover="this.style.transform='scale(1.8)'; this.style.opacity='0.8';"
+						   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+							Continue
+						</a>
+					</li>
+				</ul>
+				
+					</div>
+				<!-- Header -->
+					<header id="header">
+						<a href="#nav" class="logo"><i class="fa fa-arrow-down "></i>Scroll More <i class="fa fa-arrow-down"></i> </a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+					  <li class="active">
+						<a href="index.html"
+						   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+						   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+						   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+						  Projects
+						</a>
+					  </li>
+					</ul>
+					<ul class="icons">
+					  <li>
+						<a href="https://www.linkedin.com/in/srivak/"
+						   class="icon brands alt fa-linkedin"
+						   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+						   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+						   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+						  <span class="label">Linked IN</span>
+						</a>
+					  </li>
+					  <li>
+						<a href="https://github.com/sri-dsa"
+						   class="icon brands alt fa-github"
+						   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+						   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+						   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+						  <span class="label">GitHub</span>
+						</a>
+					  </li>
+					</ul>
+				  </nav>
+				  
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2>
+										<a href="https://github.com/sri-dsa/blob/main/machine_learning/tree_ensemble.ipynb"
+										   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+										   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+										   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											Decoding Customer Churn: An Interactive Exploration in the Telco World
+										</a>
+									</h2>
+									
+									<p>In this project on Telco Customer Churn, we aim to understand the factors influencing churn, such as service quality and pricing. We will analyze customer data to develop effective retention strategies for telcos and reduce revenue loss. The study's focus includes personalized experiences and innovative services to foster customer loyalty.
+									</p>
+								</header>
+								<a href="https://github.com/sri-dsa/blob/main/machine_learning/tree_ensemble.ipynb" class="image main"><img src="images/telco.png" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/tree_ensemble.ipynb" class="button large">View Project</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/Feature_engineering.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Unleashing Insights with Interactive Feature Engineering on the Ames Dataset
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/Feature_engineering.ipynb" class="image fit"><img src="images/ames.png" alt="" /></a>
+									<p>In feature engineering with the Ames dataset, we will create new meaningful features from existing ones, such as combining area measurements to derive total living space. We may handle missing data through imputation techniques and encode categorical variables to prepare the data for machine learning models effectively. Additionally, feature scaling and normalization may be applied to ensure all features contribute equally to the analysis.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/Feature_engineering.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/Hierarchical_clustering.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Exploring Vehicle Segmentation through Interactive Hierarchical Clustering on the "mpg" Dataset
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/Hierarchical_clustering.ipynb" class="image fit"><img src="images/mpg.jpeg" alt="" /></a>
+									<p>In hierarchical clustering with the "mpg" dataset, we'll group vehicles based on similarity in fuel efficiency and related features. The algorithm will iteratively merge the closest data points into clusters, forming a hierarchical structure. The resulting dendrogram will illustrate the clustering hierarchy.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/Hierarchical_clustering.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/linear_regression.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Predicting Sales with Interactive Linear Regression on the "Advertising" Dataset
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/linear_regression.ipynb" class="image fit"><img src="images/dataset-card.jpg" alt="" /></a>
+									<p>In this analysis, we will perform linear regression using the "Advertising" dataset. The goal is to predict sales based on advertising expenditures for TV, radio, and newspaper channels. We will build a linear regression model to explore the relationships between these variables and understand their impact on sales.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/linear_regression.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/knn_regressor.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Predicting House Prices with KC House Dataset
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/knn_regressor.ipynb" class="image fit"><img src="images/how-size-doesnt-make-you-happier-today-main-190614.jpg" alt="" /></a>
+									<p>In this interactive analysis, we will explore the world of K-Nearest Neighbors (KNN) regression using the KC House dataset. By applying the KNN algorithm to this housing data, we aim to predict house prices based on various features, providing valuable insights for buyers and sellers in the real estate market. Get ready to interactively experience the power of KNN in making accurate and dynamic house price predictions.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/knn_regressor.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/SVC.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Unraveling Patterns with SVC on the Mouse Viral Study Dataset
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/SVC.ipynb" class="image fit"><img src="images/mouse.webp" alt="" /></a>
+									<p>Join us on an interactive journey as we dive into the world of Support Vector Classification (SVC) using the "mouse_viral_study" dataset. Together, we'll unravel intricate patterns and classify the data to gain deeper insights into the study's viral outcomes. Get ready to actively engage with SVC to unlock valuable discoveries and revolutionize our understanding of this critical research.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/SVC.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/NLP_supervised.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Empowering Sentiment Analysis: Text Classification of Airline Tweets
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/NLP_supervised.ipynb" class="image fit"><img src="images/air.jpeg" alt="" /></a>
+									<p>Embark on an empowering exploration as we harness the potential of text classification using the "airline_tweets" dataset. Through sentiment analysis, we aim to classify the tweets and gain valuable insights into customer emotions, opinions, and experiences with airlines. Get ready to interactively navigate through the world of textual data and uncover the true sentiment behind each tweet, empowering businesses to make data-driven decisions for improved customer satisfaction.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/NLP_supervised.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/PCA.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Dimensionality Reduction for Precision: Interactive PCA on Cancer Tumor Data Features
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/PCA.ipynb" class="image fit"><img src="images/pca.jpeg" alt="" /></a>
+									<p>In this interactive exploration, we employ Principal Component Analysis (PCA) on the "cancer_tumor_data_features" dataset to achieve dimensionality reduction with precision. Through interactive manipulation of data, we aim to extract the most informative tumor features, aiding researchers in accurately characterizing tumor subtypes and advancing personalized cancer treatments. Join us on this transformative journey as we unravel the power of PCA in the fight against cancer.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/PCA.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/machine_learning/Kmeans_quantization.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Revitalizing Palmtrees.jpg: Interactive K-Means Color Quantization
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/machine_learning/Kmeans_quantization.ipynb" class="image fit"><img src="images/color.png" alt="" /></a>
+									<p>Join us in an interactive journey of image transformation as we breathe new life into "palmtrees.jpg" using K-Means Color Quantization. Through dynamic color reduction, watch as the palm tree landscape undergoes a revitalizing change, preserving its essence while unleashing a captivating visual experience. Get ready to engage with the power of data-driven image processing, where creativity meets data science to create an artful masterpiece.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/machine_learning/Kmeans_quantization.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/AWS_sagemaker/NLP.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Sentiment Analysis for Movie Reviews using SageMaker
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/AWS_sagemaker/NLP.ipynb" class="image fit"><img src="images/imdb.png" alt="" /></a>
+									<p>In this project, we will perform sentiment analysis for movie reviews using Amazon SageMaker. By leveraging machine learning algorithms, we aim to classify movie reviews as positive or negative, gaining valuable insights into audience opinions and sentiments. With SageMaker's powerful tools, we will create an efficient and accurate sentiment analysis model for enhanced decision-making in the entertainment industry.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/AWS_sagemaker/NLP.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/deep_learning/transfer_learning.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Empowering Disease Diagnosis: Interactive Transfer Learning with InceptionV3 on Custom Malaria Images
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/deep_learning/transfer_learning.ipynb" class="image fit"><img src="images/malaria.webp" alt="" /></a>
+									<p>Step into the realm of interactive data exploration as we employ transfer learning with the InceptionV3 model to revolutionize malaria detection using custom images. Experience the power of pre-trained features fused with cutting-edge deep learning techniques to create a robust and accurate malaria classification system. Join us on this transformative journey to empower healthcare professionals and researchers in early disease diagnosis and improve patient outcomes worldwide.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/deep_learning/transfer_learning.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/deep_learning/autoencoders.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Interactive Autoencoders: Unraveling MNIST's Hidden Representations
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/deep_learning/autoencoders.ipynb" class="image fit"><img src="images/auto.png" alt="" /></a>
+									<p>Join us on an interactive exploration as we delve into the world of autoencoders applied to the MNIST dataset. By leveraging this powerful unsupervised learning technique, we aim to unravel the hidden representations of MNIST images, compressing and reconstructing them with astonishing accuracy. Prepare to engage with cutting-edge deep learning as we unveil the transformative capabilities of autoencoders in image processing and data compression.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/deep_learning/autoencoders.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/deep_learning/RNN_TIMESERIES.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Empowering Time Series Forecasting: Interactive RNN Analysis with RSCCASN Dataset
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/deep_learning/RNN_TIMESERIES.ipynb" class="image fit"><img src="images/time.png" alt="" /></a>
+									<p>Step into the world of interactive data exploration as we harness the power of Recurrent Neural Networks (RNN) for time series forecasting using the RSCCASN dataset. Through dynamic analysis, we aim to empower businesses and researchers with accurate predictions of future trends and patterns. Join us on this transformative journey as we revolutionize time series forecasting using RNN, bringing precision and foresight to decision-making processes.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/deep_learning/RNN_TIMESERIES.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/deep_learning/NLP_RNN.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Experience the Magic of NLP: Interactive Text Generation from "shakespeare.txt"
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/deep_learning/NLP_RNN.ipynb" class="image fit"><img src="images/nlp.jpeg" alt="" /></a>
+									<p>Prepare for an immersive adventure as we delve into the fascinating realm of Natural Language Processing (NLP) and embark on text generation using the esteemed "shakespeare.txt" dataset. Through interactive analysis, we endeavor to revive Shakespearean prose and poetry, tapping into the prowess of language models to craft captivating and evocative text. Join us in this enchanting journey to witness the artistry of NLP as we breathe new life into Shakespeare's words, creating an interactive experience that celebrates the essence of his literary brilliance.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/deep_learning/NLP_RNN.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>
+											<a href="https://github.com/sri-dsa/blob/main/deep_learning/DCGAN.ipynb"
+											   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+											   onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='0.8';"
+											   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+											   Interactive DCGAN: Unleashing Creativity with MNIST
+											</a>
+										  </h2>
+										  
+									</header>
+									<a href="https://github.com/sri-dsa/blob/main/deep_learning/DCGAN.ipynb" class="image fit"><img src="images/mnist-demo.webp" alt="" /></a>
+									<p>In this captivating exploration, we dive into the world of Deep Convolutional Generative Adversarial Networks (DCGAN) applied to the MNIST dataset. Through this interactive journey, we aim to unleash creativity by generating realistic and captivating images of handwritten digits, taking generative AI to new heights. Prepare to witness the magic of DCGAN as we bridge the gap between human creativity and AI, producing stunning visual art with an innovative deep learning approach.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sri-dsa/blob/main/deep_learning/DCGAN.ipynb" class="button">View Project</a></li>
+									</ul>
+								</article>
+							</section>
+							<div class="text-container">
+								<h3 class="animated-text">Interested in my Analytics Projects Portfolio?</h3>
+								<p class="badges-container">
+								  <a href="https://github.com/sri-dsa/DataAnalyticsProjects" target="_blank">
+									<img src="https://img.shields.io/badge/Power%20BI-%23F2C811.svg?style=for-the-badge&logo=powerbi&logoColor=black" height="30" 
+										 style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+										 onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+										 onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								  <a href="https://github.com/sri-dsa/DataAnalyticsProjects" target="_blank">
+									<img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-%23CC2927.svg?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" height="30" 
+										 style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+										 onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+										 onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								  <a href="https://github.com/sri-dsa/DataAnalyticsProjects" target="_blank">
+									<img src="https://img.shields.io/badge/Azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white" height="30" 
+										 style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+										 onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+										 onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								  <a href="https://github.com/sri-dsa/DataAnalyticsProjects" target="_blank">
+									<img src="https://img.shields.io/badge/Tableau-%23E97627.svg?style=for-the-badge&logo=tableau&logoColor=white" height="30" 
+										 style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+										 onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+										 onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								  <a href="https://github.com/sri-dsa/DataAnalyticsProjects" target="_blank">
+									<img src="https://img.shields.io/badge/Microsoft%20Excel-%2300A651.svg?style=for-the-badge&logo=microsoft-excel&logoColor=white" height="30" 
+										 style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+										 onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+										 onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								  <a href="https://github.com/sri-dsa/DataAnalyticsProjects" target="_blank">
+									<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=grey" height="30" 
+										 style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+										 onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+										 onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								  <a href="https://github.com/sri-dsa" target="_blank">
+									<img src="https://img.shields.io/badge/Also You can Visit my whole GitHub Profile-181717?style=flat-square&logo=github&logoColor=white&labelColor=grey" height="30" style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;" 
+									onmouseover="this.style.transform='scale(1.2)'; this.style.opacity='0.8';" 
+									onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';"/>
+								  </a>
+								</p>
+							  </div>
+							  
+							  
+					</div>
+					
+
+				<!-- Footer -->
+<footer id="footer">
+    <section class="split contact">
+        <section>
+            <h3>Address</h3>
+<p>
+    10, Spring Grove Walk,<br>
+    Burley,<br>
+    Leeds,<br>
+    West Yorkshire LS6 1RR<br>
+	<a href="https://maps.apple.com/?q=10+Spring+Grove+Walk,+Burley,+Leeds,+LS6+1RR" target="_blank" style="text-decoration: none; color: #007bff;">
+        🍏 Apple Maps
+    </a><br/>
+    <a href="https://www.google.com/maps/place/10+Spring+Grove+Walk,+Burley,+Leeds+LS6+1RR" target="_blank" style="text-decoration: none; color: #007bff;">
+        📍 Google Maps
+    </a>
+</p>
+
+        </section>
+        <section>
+            <h3>Phone</h3>
+<p>
+    <a href="tel:+4407442002336">(+44) 0744 200 2336</a>
+</p>
+        </section>
+        <section>
+			<h3>Email</h3>
+			<p>
+				<a href="mailto:sk.data@icloud.com" 
+				   style="display: inline-block; transition: transform 0.2s ease-in-out, color 0.3s ease-in-out; color: #007bff; text-decoration: none;" 
+				   onmouseover="this.style.transform='scale(1.3)'; this.style.color='#00ff00';" 
+				   onmouseout="this.style.transform='scale(1)'; this.style.color='#007bff';">
+					sk.data@icloud.com
+				</a>
+			</p>
+		</section>
+		
+        <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+                <li>
+					<a href="https://www.linkedin.com/in/srivak/" class="icon brands alt fa-linkedin"
+					   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+					   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+					   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+					  <span class="label">LinkedIn</span>
+					</a>
+				  </li>
+				  <li>
+					<a href="https://github.com/sri-dsa" class="icon brands alt fa-github"
+					   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+					   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+					   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+					  <span class="label">GitHub</span>
+					</a>
+				  </li>
+				  <li>
+					<a href="mailto:sk.data@icloud.com" class="icon solid alt fa-envelope"
+					   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+					   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+					   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+					  <span class="label">Email</span>
+					</a>
+				  </li>
+				  <li>
+					<a href="https://www.hackerrank.com/profile/sk_data" class="icon brands alt fa-hackerrank"
+					   style="display: inline-block; transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;"
+					   onmouseover="this.style.transform='scale(1.9)'; this.style.opacity='0.8';"
+					   onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+					  <span class="label">HackerRank</span>
+					</a>
+				  </li>
+				  
+            </ul>
+        </section>
+    </section>
+</footer>
+
+				<!-- Copyright -->
+<div id="copyright" style="color: #ffffff;">
+    <ul>
+        <li>© <span style="animation: blink 1s infinite;">👀</span> This site is under heavy surveillance because I'm too broke to copyright.</li>
+        <li>Designer/Editor: <a href="https://www.linkedin.com/in/srivak/"><span class="shaking-emoji">🎨</span> Srivathsan Karthikeyan</a></li>
+    </ul>
+    
+    <div class="badges">
+		<span class="badge" style="background: rgba(255, 255, 255, 0.1); color: #fff; padding: 5px 10px; border-radius: 12px; font-size: 0.9em; border: 1px solid rgba(255, 255, 255, 0.3); transition: transform 0.2s ease-in-out, background 0.3s ease-in-out; position: relative; cursor: pointer;" 
+		onmouseover="this.innerText=' No Pain ↔️ No Glory!🚀'" 
+		onmouseout="this.innerText='🔥 Runs on Perseverance'">🔥 Runs on Perseverance</span>
+	
+		<span class="badge" style="background: rgba(255, 255, 255, 0.1); color: #fff; padding: 5px 10px; border-radius: 12px; font-size: 0.9em; border: 1px solid rgba(255, 255, 255, 0.3); transition: transform 0.2s ease-in-out, background 0.3s ease-in-out; position: relative; cursor: pointer;" 
+		onmouseover="this.innerText='Just Hire Me'" 
+		onmouseout="this.innerText='💰 Accepting Donations'">💰 Accepting Donations</span>
+	</div>
+	
+
+<style>
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.badges {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+</style>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				particlesJS.load('particles-js', 'assets/particles.json', function() {
+					console.log('Particles.js config loaded from assets/particles.json');
+				});
+			</script>
+
+	</body>
+</html>
