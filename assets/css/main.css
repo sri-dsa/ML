@@ -3226,7 +3226,7 @@ input, select, textarea {
     background: #000 !important; /* Dark background for better contrast */
 }
 
-h1 {
+intro h1, h2, h3 {
     background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
     color: #fff;
     padding: 8px 15px;
