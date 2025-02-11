@@ -4007,6 +4007,7 @@ h1{
 /* Footer */
 /* Footer Container */
 /* Footer Container */
+/* Footer Container */
 #footer {
     display: flex;
     justify-content: center;
@@ -4014,27 +4015,37 @@ h1{
     padding: 3% 5%;
     width: 100%;
     background-color: #1e252d; /* Matches site theme */
-    color: #ffffff; /* Ensures visible text */
+    color: #ffffff; /* Ensures readable text */
 }
 
-/* Footer Layout */
+/* Footer Layout - Straight Line in Laptop View */
 #footer .split.contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* ✅ Ensures dual-column layout on large screens */
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px; /* Prevents stretching */
     margin: 0 auto;
+    gap: 20px;
 }
 
-/* Individual Footer Sections */
+/* Footer Sections */
 #footer .split.contact section {
+    flex: 1;
     padding: 10px;
     text-align: left;
-    color: #ffffff; /* ✅ Fixes invisible text */
+    color: #ffffff; /* Ensures visibility */
 }
 
-/* Social Icons Styling */
+/* ✅ Header Text Fix */
+#footer .split.contact h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold for better contrast */
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
 #footer .icons {
     display: flex;
     gap: 10px;
@@ -4045,7 +4056,7 @@ h1{
 /* Social Icon Sizing */
 #footer .icons a {
     font-size: 1.5rem;
-    color: #ffffff; /* ✅ Ensures icon visibility */
+    color: #ffffff;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -4058,7 +4069,7 @@ h1{
 /* Links Styling */
 #footer a {
     text-decoration: none;
-    color: #00aaff; /* ✅ Ensures readable links */
+    color: #00aaff;
     transition: color 0.3s ease-in-out;
 }
 
@@ -4069,7 +4080,7 @@ h1{
 /* ✅ RESPONSIVENESS: Mobile View */
 @media screen and (max-width: 768px) {
     #footer .split.contact {
-        grid-template-columns: 1fr; /* ✅ Ensures single-column layout for mobile */
+        flex-direction: column; /* Stacks content in mobile */
         text-align: center;
         align-items: center;
     }
@@ -4077,10 +4088,11 @@ h1{
     #footer .split.contact section {
         width: 100%;
     }
+
+    #footer .split.contact h3 {
+        text-align: center; /* Centers header text in mobile */
+    }
 }
-
-			
-
 	#copyright {
 		color: #ffffff;
 		position: relative;
