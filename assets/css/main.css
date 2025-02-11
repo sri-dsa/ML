@@ -4008,44 +4008,49 @@ h1{
 /* Footer Container */
 /* Footer Container */
 /* Footer Container */
+/* 🔹 Footer Container - Ensures Full Width & No White Gap */
 #footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 3% 5%;
-    width: 100%;
+    width: calc(100% - 4rem); /* ✅ Removes white gap */
+    max-width: 72rem; /* ✅ Restricts width to a readable size */
     background-color: #1e252d; /* Matches site theme */
-    color: #ffffff; /* Ensures readable text */
+    color: #ffffff; /* ✅ Ensures text is visible */
+    margin: 0 auto; /* ✅ Centers footer properly */
 }
 
-/* Footer Layout - Straight Line in Laptop View */
+/* 🔹 Footer Layout - Ensures Even Spacing */
 #footer .split.contact {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px; /* Prevents stretching */
+    max-width: 1200px;
     margin: 0 auto;
-    gap: 20px;
+    gap: 20px; /* ✅ Adds spacing */
 }
 
-/* Footer Sections */
+/* 🔹 Individual Footer Sections - No Extra Blank Space */
 #footer .split.contact section {
     flex: 1;
+    min-width: 200px; /* ✅ Prevents sections from shrinking too much */
     padding: 10px;
     text-align: left;
-    color: #ffffff; /* Ensures visibility */
+    color: #ffffff; /* ✅ Ensures visibility */
 }
 
-/* ✅ Header Text Fix */
+/* 🔹 Header Text (Address, Phone, Email, Social) */
 #footer .split.contact h3 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FFD700; /* Gold for better contrast */
+    color: #FFD700; /* ✅ Gold for visibility */
     margin-bottom: 10px;
 }
 
-/* Social Icons */
+/* 🔹 Social Icons */
 #footer .icons {
     display: flex;
     gap: 10px;
@@ -4053,10 +4058,10 @@ h1{
     padding: 0;
 }
 
-/* Social Icon Sizing */
+/* 🔹 Social Icon Styling */
 #footer .icons a {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #ffffff; /* ✅ Ensures icon visibility */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -4066,10 +4071,10 @@ h1{
     color: #00ff00;
 }
 
-/* Links Styling */
+/* 🔹 Links Styling */
 #footer a {
     text-decoration: none;
-    color: #00aaff;
+    color: #00aaff; /* ✅ Ensures readable links */
     transition: color 0.3s ease-in-out;
 }
 
@@ -4079,10 +4084,14 @@ h1{
 
 /* ✅ RESPONSIVENESS: Mobile View */
 @media screen and (max-width: 768px) {
+    #footer {
+        width: 100%; /* ✅ Ensures full width in mobile */
+    }
+
     #footer .split.contact {
-        flex-direction: column; /* Stacks content in mobile */
-        text-align: center;
+        flex-direction: column; /* ✅ Stacks content */
         align-items: center;
+        text-align: center;
     }
 
     #footer .split.contact section {
@@ -4090,7 +4099,7 @@ h1{
     }
 
     #footer .split.contact h3 {
-        text-align: center; /* Centers header text in mobile */
+        text-align: center; /* ✅ Centers header text */
     }
 }
 	#copyright {
