@@ -4009,44 +4009,45 @@ h1{
 /* Footer Container */
 /* Footer Container */
 /* 🔹 Footer Container - Ensures Full Width & No White Gap */
+/* 🔹 Footer Container - Now Optimally Expands */
 #footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 3% 5%;
-    width: calc(100% - 4rem); /* ✅ Removes white gap */
-    max-width: 72rem; /* ✅ Restricts width to a readable size */
-    background-color: #1e252d; /* Matches site theme */
-    color: #ffffff; /* ✅ Ensures text is visible */
-    margin: 0 auto; /* ✅ Centers footer properly */
+    width: 100%; /* ✅ Now fully expands */
+    max-width: 100%; /* ✅ Ensures it stretches properly */
+    background-color: #1e252d;
+    color: #ffffff;
+    margin: 0 auto;
 }
 
-/* 🔹 Footer Layout - Ensures Even Spacing */
+/* 🔹 Footer Layout - Ensures Full-Width Fit */
 #footer .split.contact {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
+    width: 90%; /* ✅ Optimized width for better fit */
+    max-width: 1400px; /* ✅ Prevents footer from being too wide on very large screens */
     margin: 0 auto;
-    gap: 20px; /* ✅ Adds spacing */
+    gap: 20px;
 }
 
-/* 🔹 Individual Footer Sections - No Extra Blank Space */
+/* 🔹 Footer Sections */
 #footer .split.contact section {
     flex: 1;
-    min-width: 200px; /* ✅ Prevents sections from shrinking too much */
+    min-width: 200px;
     padding: 10px;
     text-align: left;
-    color: #ffffff; /* ✅ Ensures visibility */
+    color: #ffffff;
 }
 
 /* 🔹 Header Text (Address, Phone, Email, Social) */
 #footer .split.contact h3 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FFD700; /* ✅ Gold for visibility */
+    color: #FFD700;
     margin-bottom: 10px;
 }
 
@@ -4061,7 +4062,7 @@ h1{
 /* 🔹 Social Icon Styling */
 #footer .icons a {
     font-size: 1.5rem;
-    color: #ffffff; /* ✅ Ensures icon visibility */
+    color: #ffffff;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -4074,7 +4075,7 @@ h1{
 /* 🔹 Links Styling */
 #footer a {
     text-decoration: none;
-    color: #00aaff; /* ✅ Ensures readable links */
+    color: #00aaff;
     transition: color 0.3s ease-in-out;
 }
 
@@ -4085,13 +4086,14 @@ h1{
 /* ✅ RESPONSIVENESS: Mobile View */
 @media screen and (max-width: 768px) {
     #footer {
-        width: 100%; /* ✅ Ensures full width in mobile */
+        width: 100%;
     }
 
     #footer .split.contact {
-        flex-direction: column; /* ✅ Stacks content */
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 95%; /* ✅ Allows slight margin on smaller screens */
     }
 
     #footer .split.contact section {
@@ -4099,9 +4101,11 @@ h1{
     }
 
     #footer .split.contact h3 {
-        text-align: center; /* ✅ Centers header text */
+        text-align: center;
     }
 }
+
+			
 	#copyright {
 		color: #ffffff;
 		position: relative;
