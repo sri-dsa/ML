@@ -4006,6 +4006,7 @@ h1{
 
 /* Footer */
 /* Footer Container */
+/* Footer Container */
 #footer {
     display: flex;
     justify-content: center;
@@ -4013,25 +4014,24 @@ h1{
     padding: 3% 5%;
     width: 100%;
     background-color: #1e252d; /* Matches site theme */
+    color: #ffffff; /* Ensures visible text */
 }
 
 /* Footer Layout */
 #footer .split.contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ✅ Ensures dual-column layout on large screens */
     gap: 20px;
     width: 100%;
-    max-width: 1200px; /* Restricts to a readable width */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Individual Footer Sections */
 #footer .split.contact section {
-    flex: 1;
-    min-width: 250px; /* Prevents sections from shrinking too much */
     padding: 10px;
     text-align: left;
+    color: #ffffff; /* ✅ Fixes invisible text */
 }
 
 /* Social Icons Styling */
@@ -4045,18 +4045,20 @@ h1{
 /* Social Icon Sizing */
 #footer .icons a {
     font-size: 1.5rem;
+    color: #ffffff; /* ✅ Ensures icon visibility */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 #footer .icons a:hover {
     transform: scale(1.3);
     opacity: 0.8;
+    color: #00ff00;
 }
 
 /* Links Styling */
 #footer a {
     text-decoration: none;
-    color: #007bff;
+    color: #00aaff; /* ✅ Ensures readable links */
     transition: color 0.3s ease-in-out;
 }
 
@@ -4064,12 +4066,12 @@ h1{
     color: #00ff00;
 }
 
-/* ✅ RESPONSIVENESS: Mobile Optimization */
+/* ✅ RESPONSIVENESS: Mobile View */
 @media screen and (max-width: 768px) {
     #footer .split.contact {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* ✅ Ensures single-column layout for mobile */
         text-align: center;
+        align-items: center;
     }
 
     #footer .split.contact section {
