@@ -4028,7 +4028,7 @@ h1{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 90%; /* ✅ Optimized width for better fit */
+    width: 100%; /* ✅ Optimized width for better fit */
     max-width: 1400px; /* ✅ Prevents footer from being too wide on very large screens */
     margin: 0 auto;
     gap: 20px;
