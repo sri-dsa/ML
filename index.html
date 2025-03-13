@@ -20,40 +20,50 @@
     particlesJS("particles-js", {
         "particles": {
             "number": { 
-                "value": 300,  // Reduce number for better performance
-                "density": { "enable": true, "value_area": 800 } 
+                "value": 600,  // Updated from 300
+                "density": { "enable": true, "value_area": 400.8530152163807 } // Updated value
             },
-            "color": { "value": "#ffe100" },
+            "color": { "value": "#d2ff00" }, // Updated color
             "shape": {
                 "type": "circle",
-                "stroke": { "width": 2, "color": "#000000" },
-                "polygon": { "nb_sides": 5 }
+                "stroke": { "width": 0, "color": "#000000" }, // Updated width
+                "polygon": { "nb_sides": 5 },
+                "image": { // Added image properties
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
             },
             "opacity": {
-                "value": 0.8,
-                "random": true,
-                "anim": { "enable": true, "speed": 1, "opacity_min": 0.3, "sync": false }
+                "value": 1, // Updated value
+                "random": false, // Updated random
+                "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } // Updated animation
             },
             "size": {
-                "value": 5,
+                "value": 12, // Updated size value
                 "random": true,
-                "anim": { "enable": true, "speed": 5, "size_min": 0.1, "sync": false }
+                "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } // Updated animation
             },
             "line_linked": {
                 "enable": true,
-                "distance": 150,
-                "color": "#ff0000",
-                "opacity": 0.6,
+                "distance": 0, // Updated from 150
+                "color": "#ffffff", // Updated color
+                "opacity": 0.4, // Updated opacity
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 3,
+                "speed": 6, // Updated speed from 3
                 "direction": "none",
                 "random": false,
                 "straight": false,
                 "out_mode": "out",
-                "bounce": false
+                "bounce": false,
+                "attract": { // Added attract property
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
             }
         },
         "interactivity": {
@@ -61,38 +71,42 @@
             "events": {
                 "onhover": { 
                     "enable": true, 
-                    "mode": "repulse"  // More visible effect
+                    "mode": "repulse"  
                 },
                 "onclick": { 
                     "enable": true, 
-                    "mode": "push"  // Click to add particles
+                    "mode": "push"  
                 },
                 "resize": true
             },
             "modes": {
                 "grab": {
-                    "distance": 250,
+                    "distance": 400, // Updated from 250
                     "line_linked": { "opacity": 1 }
                 },
                 "bubble": {
-                    "distance": 200,
-                    "size": 10,
+                    "distance": 400, // Updated from 200
+                    "size": 40, // Updated from 10
                     "duration": 2,
-                    "opacity": 1,
+                    "opacity": 8, // Updated from 1
                     "speed": 3
                 },
                 "repulse": {
-                    "distance": 150,
+                    "distance": 200, // Updated from 150
                     "duration": 0.4
                 },
                 "push": {
                     "particles_nb": 4
+                },
+                "remove": { // Newly added mode
+                    "particles_nb": 2
                 }
             }
         },
         "retina_detect": true
     });
 </script>
+
 
 
 		
