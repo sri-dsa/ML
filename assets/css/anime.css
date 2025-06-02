@@ -1,0 +1,208 @@
+/* assets/css/anime.css - Intro Section Animations - Further Enhanced V3 */
+
+/* --- Global Animation Settings & Helper Keyframes --- */
+@keyframes subtleGlobalAppear { /* A very gentle base appearance for containers */
+    0% { opacity: 0; filter: blur(2px); }
+    100% { opacity: 1; filter: blur(0px); }
+}
+
+/* --- #intro (Overall Container) --- */
+@keyframes introContainerGrandEntrance { /* Retained */
+    0% {
+        opacity: 0;
+        transform: translateY(25px) perspective(1000px) rotateX(-5deg) scale(0.98);
+        filter: blur(3px);
+    }
+    30% { filter: blur(1px); }
+    100% {
+        opacity: 1;
+        transform: translateY(0) perspective(1000px) rotateX(0deg) scale(1);
+        filter: blur(0px);
+    }
+}
+#intro { /* Retained */
+    opacity: 0;
+    animation: introContainerGrandEntrance 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s forwards;
+}
+
+
+/* --- Main Title (H2 "Artificial Intelligence Projects Portfolio") --- */
+@keyframes plaqueMaterializeAndSheen { /* Retained - Entry Animation */
+    0% { opacity: 0; transform: scale(0.96) translateY(15px); clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%); filter: brightness(0.8) saturate(0.7); }
+    60% { opacity: 0.9; transform: scale(1) translateY(0); clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px); filter: brightness(1) saturate(1); }
+    70% { opacity: 1; filter: brightness(1) saturate(1); }
+    85% { opacity: 1; filter: brightness(1.5) saturate(1.2); box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3), inset 0 1px 3px rgba(255, 245, 210, 0.6); }
+    100% { opacity: 1; transform: scale(1) translateY(0); clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px); filter: brightness(1) saturate(1); }
+}
+@keyframes plaqueBackgroundShimmerEnhanced { /* Retained - Idle Background Shimmer */
+    0% { background-position: -100% 50%; filter: brightness(1.0) contrast(1.0); }
+    25% { background-position: 0% 50%; filter: brightness(1.15) contrast(1.05); }
+    50% { background-position: 100% 50%; filter: brightness(1.0) contrast(1.0); }
+    75% { background-position: 200% 50%; filter: brightness(1.1) contrast(1.03); }
+    100% { background-position: -100% 50%; filter: brightness(1.0) contrast(1.0); }
+}
+@keyframes mainTitleTextGlow { /* Retained - Idle Text Glow */
+    0%, 100% { text-shadow: 0 0 3px rgba(255, 223, 150, 0.3), 0 0 6px rgba(255, 223, 150, 0.2), 1px 1px 1px rgba(0,0,0,0.1); }
+    50% { text-shadow: 0 0 5px rgba(255, 223, 150, 0.45), 0 0 10px rgba(255, 223, 150, 0.35), 1px 1px 1px rgba(0,0,0,0.1); }
+}
+
+/* CORRECTED State for #intro > h2:first-of-type (plaqueVitalityPulse is GONE) */
+#intro > h2:first-of-type {
+    opacity: 0;
+    /* Ensure these base styles are applied either here or inline in your HTML */
+    background: linear-gradient(45deg, #d4af37, #f7d78a, #d4af37, #b8860b, #f7d78a, #d4af37); /* Gradient from your preference */
+    background-size: 400% 100%;
+    color: #181005; /* Assuming this is the text color from your HTML */
+
+    animation: plaqueMaterializeAndSheen 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s forwards, /* Entry */
+               plaqueBackgroundShimmerEnhanced 8s ease-in-out infinite 2.5s, /* Idle Background Shimmer */
+               mainTitleTextGlow 3s ease-in-out infinite 2.8s; /* Idle Text Glow */
+}
+/* Note: @keyframes plaqueVitalityPulse definition should be deleted from your CSS file. */
+
+
+/* --- Sub-Title (H2 "Includes Machine Learning, Deep Learning, Computer Vision, NLP") --- */
+@keyframes subtitleWordCascadeIn { /* Retained - Entry Animation */
+    0% { opacity: 0; transform: translateY(15px) rotateX(-15deg); filter: blur(3px); }
+    100% { opacity: 1; transform: translateY(0) rotateX(0deg); filter: blur(0px); }
+}
+/* NEW: Idle animation for Sub-Title Text */
+#intro > h2:nth-of-type(2) { /* Retained Entry, NEW Idle */
+    opacity: 0;
+    transform-origin: center bottom;
+    animation: subtitleWordCascadeIn 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s forwards, /* Entry */
+               subtitleIdleBreathingText 6s ease-in-out infinite 3s; /* NEW Idle */
+    /* Assuming default text color or you'll set it. If it's black, the shadow needs to be a lighter color. */
+}
+
+
+/* --- Author Banner (H3 "Author : Srivathsan Karthikeyan") --- */
+@keyframes authorBannerShapeReveal { /* Retained - Entry Animation */
+    0% { opacity: 0; clip-path: polygon(0 0, 100% 0, 100% 0, 50% 0, 0 0); transform: translateY(-10px); }
+    50% { opacity: 0.7; clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 20%, 0 20%); transform: translateY(0px); }
+    100% { opacity: 1; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 50% 100%, 0 calc(100% - 20px)); transform: translateY(0px); }
+}
+@keyframes authorNameElegantRise { /* Retained - Entry Animation */
+    0% { opacity: 0; transform: translateY(25px) scaleY(0.8); filter: blur(1px); }
+    100% { opacity: 1; transform: translateY(0) scaleY(1); filter: blur(0px); }
+}
+/* NEW: Idle animations for Author Banner */
+@keyframes authorBannerBgShimmer { /* For its crimson background */
+    0% { background-position: -100% 50%; filter: brightness(0.95); }
+    50% { background-position: 100% 50%; filter: brightness(1.1); }
+    100% { background-position: -100% 50%; filter: brightness(0.95); }
+}
+@keyframes authorNameCornsilkGlow { /* For its Cornsilk text */
+    0%, 100% { text-shadow: 0 0 2px rgba(255, 248, 220, 0.3), 0 0 5px rgba(255, 248, 220, 0.2); }
+    50% { text-shadow: 0 0 4px rgba(255, 248, 220, 0.5), 0 0 8px rgba(255, 248, 220, 0.3); }
+}
+#intro > h3 { /* Retained Entry, NEW Idle */
+    opacity: 0;
+    /* Ensure H3 has its base styles (background gradient, text color) either inline or here */
+    /* Example: background: linear-gradient(135deg, #800000, #A52A2A, #C21E56, #A52A2A, #800000); color: #FFF8DC; */
+    background-size: 300% 100%; /* Add for its background shimmer */
+    animation: authorBannerShapeReveal 1s cubic-bezier(0.23, 1, 0.32, 1) 2.0s forwards, /* Entry shape */
+               authorNameElegantRise 0.9s cubic-bezier(0.23, 1, 0.32, 1) 2.3s forwards, /* Entry text */
+               authorBannerBgShimmer 9s ease-in-out infinite 3.5s, /* NEW Idle background shimmer */
+               authorNameCornsilkGlow 4s ease-in-out infinite 3.8s; /* NEW Idle text glow */
+}
+
+
+/* --- Tech Badges Container (Paragraph holding the image links) --- */
+@keyframes badgesContainerSubtleEntry { /* Retained */
+    0% { opacity: 0; transform: translateY(20px) perspective(800px) rotateX(-10deg); }
+    100% { opacity: 1; transform: translateY(0) perspective(800px) rotateX(0deg); }
+}
+#intro p[align="center"] { /* Retained */
+    opacity: 0;
+    animation: badgesContainerSubtleEntry 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s forwards;
+    transform-origin: top center;
+}
+
+
+/* --- Individual Tech Badges (Images within Links) --- */
+@keyframes techBadgeMajesticUnfold { /* Retained - Entry Animation */
+    0% { opacity: 0; transform: perspective(800px) rotateY(-90deg) scale(0.8) translateX(-30px); filter: brightness(0.6) blur(2px); }
+    60% { opacity: 0.9; transform: perspective(800px) rotateY(10deg) scale(1.05) translateX(5px); filter: brightness(1.1) blur(0.5px); }
+    80% { opacity: 1; transform: perspective(800px) rotateY(-5deg) scale(0.98) translateX(0px); filter: brightness(1) blur(0px); }
+    90% { filter: brightness(1.6) contrast(1.2); transform: perspective(800px) rotateY(0deg) scale(1.01); }
+    100% { opacity: 1; transform: perspective(800px) rotateY(0deg) scale(1) translateX(0px); filter: brightness(1) contrast(1); }
+}
+/* NEW: Idle animations for Tech Badges */
+@keyframes techBadgeIdleFloat {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-3px) scale(1.01); } /* Gentle float up */
+}
+@keyframes techBadgeSubtleGlowPulse {
+    0%, 100% { filter: drop-shadow(0 0 1px rgba(200, 200, 220, 0.2)); }
+    50% { filter: drop-shadow(0 0 4px rgba(200, 200, 220, 0.4)); } /* Soft, diffused glow */
+}
+#intro p[align="center"] a { /* Retained Entry, NEW Idle */
+    display: inline-block;
+    opacity: 0;
+    transform-style: preserve-3d;
+    animation: techBadgeMajesticUnfold 1.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, /* Entry */
+               techBadgeIdleFloat 8s ease-in-out infinite, /* NEW Idle float, no individual delay needed for a subtle collective feel */
+               techBadgeSubtleGlowPulse 5s ease-in-out infinite 0.5s; /* NEW Idle glow, slightly offset start */
+    /* The individual animation-delay for entry is handled by the nth-child rules below */
+}
+/* Staggering delays for entry animation (Retained) */
+#intro p[align="center"] a:nth-child(1) { animation-delay: 3.2s, 3.7s, 4.2s; } /* Entry, Float start, Glow start */
+#intro p[align="center"] a:nth-child(2) { animation-delay: 3.35s, 3.85s, 4.35s; }
+#intro p[align="center"] a:nth-child(3) { animation-delay: 3.5s, 4.0s, 4.5s; }
+#intro p[align="center"] a:nth-child(4) { animation-delay: 3.65s, 4.15s, 4.65s; }
+#intro p[align="center"] a:nth-child(5) { animation-delay: 3.8s, 4.3s, 4.8s; }
+#intro p[align="center"] a:nth-child(6) { animation-delay: 3.95s, 4.45s, 4.95s; }
+/* Note: If applying multiple idle animations with different start times to staggered elements,
+   you list delays for each animation name in order. The float can start slightly after entry,
+   and glow after that, or they can share a similar delayed start.
+   For simplicity with idle animations on multiple elements, I've made the float use the base delay (implicit from entry)
+   and the glow a slight offset. Simpler: techBadgeIdleFloat 8s ease-in-out infinite 0.5s (after entry).
+   Let's apply the idle animation delays directly on the main rule and remove them from nth-child for simplicity for IDLE effects.
+   Entry delays remain staggered. */
+#intro p[align="center"] a {
+    display: inline-block; opacity: 0; transform-style: preserve-3d;
+    animation: 
+        techBadgeMajesticUnfold 1.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, /* Staggered via :nth-child */
+        techBadgeIdleFloat 8s ease-in-out infinite 1.8s, /* Idle float starts ~1.8s after its *own* entry is done */
+        techBadgeSubtleGlowPulse 5s ease-in-out infinite 2.3s; /* Idle glow starts ~2.3s after its *own* entry */
+}
+#intro p[align="center"] a:nth-child(1) { animation-delay: 3.2s, 3.2s + 1.8s, 3.2s + 2.3s; }
+#intro p[align="center"] a:nth-child(2) { animation-delay: 3.35s, 3.35s + 1.8s, 3.35s + 2.3s; }
+#intro p[align="center"] a:nth-child(3) { animation-delay: 3.5s, 3.5s + 1.8s, 3.5s + 2.3s; }
+#intro p[align="center"] a:nth-child(4) { animation-delay: 3.65s, 3.65s + 1.8s, 3.65s + 2.3s; }
+#intro p[align="center"] a:nth-child(5) { animation-delay: 3.8s, 3.8s + 1.8s, 3.8s + 2.3s; }
+#intro p[align="center"] a:nth-child(6) { animation-delay: 3.95s, 3.95s + 1.8s, 3.95s + 2.3s; }
+
+
+/* --- Continue Button (Call to Action in ul.actions) --- */
+@keyframes continueButtonGrandArrival { /* Retained - Entry */
+    0% { opacity: 0; transform: scale(0.7) translateY(30px) rotateZ(-15deg); filter: blur(2px); }
+    60% { opacity: 1; transform: scale(1.1) translateY(-5px) rotateZ(5deg); filter: blur(0px); }
+    80% { transform: scale(0.98) translateY(0px) rotateZ(-2deg); }
+    100% { opacity: 1; transform: scale(1) translateY(0) rotateZ(0deg); filter: blur(0px); }
+}
+@keyframes continueButtonIdlePulse { /* Retained - Idle pulse for button body */
+    0% { box-shadow: 0 0 8px rgba(255, 255, 255, 0.2), 0 0 12px rgba(212, 175, 55, 0.15); transform: scale(1); }
+    50% { box-shadow: 0 0 16px rgba(255, 255, 255, 0.4), 0 0 24px rgba(212, 175, 55, 0.3); transform: scale(1.03); }
+    100% { box-shadow: 0 0 8px rgba(255, 255, 255, 0.2), 0 0 12px rgba(212, 175, 55, 0.15); transform: scale(1); }
+}
+/* NEW: Idle animation for "Continue" text shine */
+@keyframes continueButtonTextShine {
+    0%, 100% { text-shadow: 0 0 1px rgba(255,255,255,0.3); }
+    50% { text-shadow: 0 0 4px rgba(255,255,255,0.7), 0 0 8px rgba(255,255,255,0.3); } /* Brighter white glow */
+}
+#intro .actions .button { /* Retained Entry & Idle Pulse, NEW Idle Text Shine */
+    opacity: 0;
+    animation: continueButtonGrandArrival 1.2s cubic-bezier(0.68, -0.6, 0.32, 1.6) 4.5s forwards, /* Entry */
+               continueButtonIdlePulse 2.5s ease-in-out infinite 6.0s, /* Existing Idle for button body */
+               continueButtonTextShine 3s ease-in-out infinite 6.3s; /* NEW Idle for text */
+    /* Ensure the button text color allows text-shadow to be visible (e.g., if text is dark, use light shadow) */
+}
+
+/* --- General Notes on Animation --- */
+/* (Retained all previous notes, plus new ones below)
+13. NEW Idle Animations: Added for Subtitle, Author Banner (background & text), Tech Badges (float & glow), and Continue Button (text shine).
+14. Staggering Idle Animations: For the tech badges, the idle animations now also have their delays calculated based on the entry delay of each badge to ensure they start after the badge has appeared.
+15. Base Styles: For new idle effects like background shimmers (e.g., on H3), ensure necessary base styles like `background-size` are added to the element's rule. Assumed H3 has its crimson gradient and Cornsilk text color defined (either inline or in this CSS).
+*/
